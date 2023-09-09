@@ -44,6 +44,10 @@ def add_student(new_student: Info, res: Response):
 
 @app.get("/students/student_lookup")
 def student_lookup(slack_name: str, track: str, res: Response):
+    json_data=open("./students.json").read()
+    data = json.loads(json_data)
+    Students = data["Students_data"]
+    
     all_students = [student for student in Students if  slack_name.lower() in student["slack_name"] and track.lower() in student["track"]]
     
     if not all_students:
