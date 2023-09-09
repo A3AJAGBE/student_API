@@ -1,3 +1,4 @@
+import json
 from typing import Optional
 
 from datetime import datetime
@@ -9,12 +10,14 @@ app = FastAPI()
 
 class Info(BaseModel):
     slack_name: str
-    current_day: str
-    utc_time: datetime
+    current_day: Optional[str] = None
+    utc_time: Optional[datetime] = None
     track: str
     github_file_url: str
     github_repo_url: str
     status_code: Optional[int] = None
+
+Students_data = []
 
 Students = [
     {
@@ -67,24 +70,30 @@ Students = [
 @app.get("/")
 def index():
     return Students
-
-
+ 
+ 
 @app.post("/students/add")
-def add_student(new_student: Info, res: Response):         
-    student = new_student.dict()
+def add_student(new_student: Info, res: Response):     
+    student = new_student.model_dump()
     res.status_code = 201
+    student["current_day"] = datetime.today().strftime('%A')
+    student["utc_time"] = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
     student["status_code"] = res.status_code
-    Students.append(student)
-    return student
-
+    
+    with open("students.json", "w") as file:
+        Students_data.append(student)
+        data = {"Students_data": Students_data}
+        json.dump(data, file, indent=4)
+        return "Student Added successfully"
+    
 
 @app.get("/students/student_lookup")
 def student_lookup(slack_name: str, track: str, res: Response):
-    all = [student for student in Students if  slack_name.lower() in student["slack_name"] and track.lower() in student["track"]]
+    all_students = [student for student in Students if  slack_name.lower() in student["slack_name"] and track.lower() in student["track"]]
     
-    if not all:
+    if not all_students:
         res.status_code = 404
         return {"message": "Student not found."}
     else:
-        return all if len(all) > 1 else all[0]
+        return all_students if len(all_students) > 1 else all_students[0]
     
