@@ -1,7 +1,18 @@
+from datetime import datetime
 from fastapi import FastAPI, Response
+from pydantic import BaseModel
 
 
 app = FastAPI()
+
+class Info(BaseModel):
+    slack_name: str
+    current_day: str
+    utc_time: datetime
+    track: str
+    github_file_url: str
+    github_repo_url: str
+    status_code: int
 
 Students = [
     {
@@ -64,3 +75,4 @@ def student_lookup(slack_name: str, track: str, res: Response):
         return {"message": "Student not found."}
     else:
         return all if len(all) > 1 else all[0]
+    
