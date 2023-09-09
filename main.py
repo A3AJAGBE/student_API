@@ -1,4 +1,5 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Response
+
 
 app = FastAPI()
 
@@ -53,3 +54,13 @@ Students = [
 @app.get("/")
 def index():
     return Students
+
+@app.get("/students")
+def student_lookup(slack_name: str, track: str, res: Response):
+    all = [student for student in Students if  slack_name.lower() in student["slack_name"] and track.lower() in student["track"]]
+    
+    if not all:
+        res.status_code = 404
+        return {"message": "Student not found."}
+    else:
+        return all if len(all) > 1 else all[0]
