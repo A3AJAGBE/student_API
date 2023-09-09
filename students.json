@@ -1,31 +1,47 @@
-{
-    "Students_data": [
-        {
-            "slack_name": "test",
-            "current_day": "Saturday",
-            "utc_time": "2023-09-09T19:04:12Z",
-            "track": "data",
-            "github_file_url": "https://github.com/username/repo/blob/main/test.ext",
-            "github_repo_url": "https://github.com/test/repo",
-            "status_code": 201
-        },
-        {
-            "slack_name": "test2",
-            "current_day": "Saturday",
-            "utc_time": "2023-09-09T19:04:16Z",
-            "track": "product design",
-            "github_file_url": "https://github.com/username/repo/blob/main/test2.ext",
-            "github_repo_url": "https://github.com/test2/repo",
-            "status_code": 201
-        },
-        {
-            "slack_name": "A3AJAGBE",
-            "current_day": "Saturday",
-            "utc_time": "2023-09-09T19:05:33Z",
-            "track": "backend",
-            "github_file_url": "https://github.com/username/repo/blob/main/info.ext",
-            "github_repo_url": "https://github.com/a3ajagbe/repo",
-            "status_code": 201
-        }
-    ]
-}
+[
+    {
+        "slack_name": "test",
+        "current_day": "Saturday",
+        "utc_time": "2023-09-09T21:41:16Z",
+        "track": "data",
+        "github_file_url": "https://github.com/username/repo/blob/main/test.ext",
+        "github_repo_url": "https://github.com/test/repo",
+        "status_code": 201
+    },
+    {
+        "slack_name": "test3",
+        "current_day": "Saturday",
+        "utc_time": "2023-09-09T21:41:31Z",
+        "track": "video",
+        "github_file_url": "https://github.com/username/repo/blob/main/test3.ext",
+        "github_repo_url": "https://github.com/test3/repo",
+        "status_code": 201
+    },
+    {
+        "slack_name": "a3ajagbe",
+        "current_day": "Saturday",
+        "utc_time": "2023-09-09T19:05:33Z",
+        "track": "backend",
+        "github_file_url": "https://github.com/A3AJAGBE/student_API/blob/main/students.json",
+        "github_repo_url": "https://github.com/A3AJAGBE/student_API/tree/main",
+        "status_code": 201
+    },
+    {
+        "slack_name": "test2",
+        "current_day": "Saturday",
+        "utc_time": "2023-09-09T21:43:13Z",
+        "track": "backend",
+        "github_file_url": "https://github.com/username/repo/blob/main/test2.ext",
+        "github_repo_url": "https://github.com/test2/repo",
+        "status_code": 201
+    },
+    {
+        "slack_name": "test5",
+        "current_day": "Saturday",
+        "utc_time": "2023-09-09T21:43:28Z",
+        "track": "backend",
+        "github_file_url": "https://github.com/username/repo/blob/main/test5.ext",
+        "github_repo_url": "https://github.com/test5/repo",
+        "status_code": 201
+    }
+]
