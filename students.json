@@ -1,0 +1,31 @@
+{
+    "Students_data": [
+        {
+            "slack_name": "Test",
+            "current_day": "Saturday",
+            "utc_time": "2023-09-09T18:46:42Z",
+            "track": "data",
+            "github_file_url": "https://github.com/username/repo/blob/main/test.ext",
+            "github_repo_url": "https://github.com/test/repo",
+            "status_code": 201
+        },
+        {
+            "slack_name": "Test2",
+            "current_day": "Saturday",
+            "utc_time": "2023-09-09T18:46:59Z",
+            "track": "product design",
+            "github_file_url": "https://github.com/username/repo/blob/main/test2.ext",
+            "github_repo_url": "https://github.com/test2/repo",
+            "status_code": 201
+        },
+        {
+            "slack_name": "A3AJAGBE",
+            "current_day": "Saturday",
+            "utc_time": "2023-09-09T18:49:01Z",
+            "track": "backend",
+            "github_file_url": "https://github.com/username/repo/blob/main/test2.ext",
+            "github_repo_url": "https://github.com/test2/repo",
+            "status_code": 201
+        }
+    ]
+}
