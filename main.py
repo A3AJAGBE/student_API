@@ -1,3 +1,5 @@
+from typing import Optional
+
 from datetime import datetime
 from fastapi import FastAPI, Response
 from pydantic import BaseModel
@@ -12,7 +14,7 @@ class Info(BaseModel):
     track: str
     github_file_url: str
     github_repo_url: str
-    status_code: int
+    status_code: Optional[int] = None
 
 Students = [
     {
@@ -65,6 +67,16 @@ Students = [
 @app.get("/")
 def index():
     return Students
+
+
+@app.post("/students/add")
+def add_student(new_student: Info, res: Response):         
+    student = new_student.dict()
+    res.status_code = 201
+    student["status_code"] = res.status_code
+    Students.append(student)
+    return student
+
 
 @app.get("/students/student_lookup")
 def student_lookup(slack_name: str, track: str, res: Response):
