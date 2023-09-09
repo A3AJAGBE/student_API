@@ -55,7 +55,7 @@ Students = [
 def index():
     return Students
 
-@app.get("/students")
+@app.get("/students/student_lookup")
 def student_lookup(slack_name: str, track: str, res: Response):
     all = [student for student in Students if  slack_name.lower() in student["slack_name"] and track.lower() in student["track"]]
     
