@@ -3,17 +3,18 @@ from fastapi import FastAPI
 from typing import Optional
 from datetime import datetime
 from fastapi import FastAPI, Response
-from pydantic import BaseModel, HttpUrl
+from pydantic import BaseModel
 
 app = FastAPI()
+
 
 class Info(BaseModel):
     slack_name: str
     current_day: Optional[str] = None
     utc_time: Optional[datetime] = None
     track: str
-    github_file_url: HttpUrl
-    github_repo_url: HttpUrl
+    github_file_url: str
+    github_repo_url: str
     status_code: Optional[int] = None
 
 

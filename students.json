@@ -21,10 +21,10 @@
         {
             "slack_name": "a3ajagbe",
             "current_day": "Sunday",
-            "utc_time": "2023-09-10T13:34:25Z",
+            "utc_time": "2023-09-10T17:20:05Z",
             "track": "backend",
             "github_file_url": "https://github.com/A3AJAGBE/student_API/blob/main/students.json",
-            "github_repo_url": "https://github.com/A3AJAGBE/student_API/tree/main",
+            "github_repo_url": "https://github.com/A3AJAGBE/student_API",
             "status_code": 201
         },
         {
@@ -35,7 +35,8 @@
             "github_file_url": "https://github.com/username/repo/blob/main/test5.ext",
             "github_repo_url": "https://github.com/test5/repo",
             "status_code": 201
-        },{
+        },
+        {
             "slack_name": "test4",
             "current_day": "Saturday",
             "utc_time": "2023-09-09T21:43:28Z",
