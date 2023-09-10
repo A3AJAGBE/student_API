@@ -1,39 +1,21 @@
 {
     "Students_data": [
         {
-            "slack_name": "eewo",
+            "slack_name": "a3ajagbe",
             "current_day": "Sunday",
-            "utc_time": "2023-09-10T12:59:25Z",
-            "track": "marketing",
-            "github_file_url": "eewo file url",
-            "github_repo_url": "eewo repo url",
-            "status_code": 201
-        },
-        {
-            "slack_name": "awe",
-            "current_day": "Sunday",
-            "utc_time": "2023-09-10T12:59:46Z",
-            "track": "data",
-            "github_file_url": "data file url",
-            "github_repo_url": "data repo url",
+            "utc_time": "2023-09-10T13:34:25Z",
+            "track": "backend",
+            "github_file_url": "https://github.com/A3AJAGBE/student_API/blob/main/students.json",
+            "github_repo_url": "https://github.com/A3AJAGBE/student_API/tree/main",
             "status_code": 201
         },
         {
             "slack_name": "test",
             "current_day": "Sunday",
-            "utc_time": "2023-09-10T13:01:08Z",
+            "utc_time": "2023-09-10T13:35:34Z",
             "track": "data",
             "github_file_url": "https://github.com/username/repo/blob/main/test.ext",
             "github_repo_url": "https://github.com/test/repo",
-            "status_code": 201
-        },
-        {
-            "slack_name": "test2",
-            "current_day": "Sunday",
-            "utc_time": "2023-09-10T13:01:14Z",
-            "track": "video",
-            "github_file_url": "https://github.com/username/repo/blob/main/test2.ext",
-            "github_repo_url": "https://github.com/test2/repo",
             "status_code": 201
         }
     ]
