@@ -9,9 +9,9 @@ GET https://api-7p0j.onrender.com/
 ```
 
 ```
-POST https://api-7p0j.onrender.com/students/add
+POST https://api-7p0j.onrender.com/add
 ```
 
 ```
-GET https://api-7p0j.onrender.com/students/student_lookup?slack_name=[INSERT HERE]&track=[INSERT HERE]
+GET https://api-7p0j.onrender.com/lookup?slack_name=[INSERT HERE]&track=[INSERT HERE]
 ```
