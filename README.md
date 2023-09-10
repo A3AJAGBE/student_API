@@ -13,5 +13,5 @@ POST https://api-7p0j.onrender.com/add
 ```
 
 ```
-GET https://api-7p0j.onrender.com/lookup?slack_name=[INSERT HERE]&track=[INSERT HERE]
+GET https://api-7p0j.onrender.com/api?slack_name=[INSERT HERE]&track=[INSERT HERE]
 ```
