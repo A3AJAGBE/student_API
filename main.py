@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from typing import Optional
 from datetime import datetime
 from fastapi import FastAPI, Response
-from pydantic import BaseModel
+from pydantic import BaseModel, HttpUrl
 
 app = FastAPI()
 
@@ -12,8 +12,8 @@ class Info(BaseModel):
     current_day: Optional[str] = None
     utc_time: Optional[datetime] = None
     track: str
-    github_file_url: str
-    github_repo_url: str
+    github_file_url: HttpUrl
+    github_repo_url: HttpUrl
     status_code: Optional[int] = None
 
 
