@@ -18,11 +18,12 @@ class Info(BaseModel):
 
 
 Students_data = []
+FILEPATH = "./students.json"
 
 
 @app.get("/")
 def index():
-    with open("students.json") as file:
+    with open(FILEPATH) as file:
         data = json.load(file)
         return data["Students_data"]
 
@@ -35,7 +36,7 @@ def add_student(new_student: Info, res: Response):
     student["utc_time"] = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
     student["status_code"] = res.status_code
 
-    with open("students.json", "w") as outfile:
+    with open(FILEPATH, "w") as outfile:
         Students_data.append(student)
         data = {"Students_data": Students_data}
         json.dump(data, outfile, indent=4)
@@ -44,7 +45,7 @@ def add_student(new_student: Info, res: Response):
 
 @app.get("/lookup")
 def student_lookup(slack_name: str, track: str, res: Response):
-    with open("students.json") as file:
+    with open(FILEPATH) as file:
         data = json.load(file)
         students = data["Students_data"]
 
