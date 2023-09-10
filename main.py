@@ -44,7 +44,7 @@ def add_student(new_student: Info, res: Response):
         return "Student Added successfully"
 
 
-@app.get("/lookup")
+@app.get("/api")
 def student_lookup(slack_name: str, track: str, res: Response):
     with open(FILEPATH) as file:
         data = json.load(file)
