@@ -7,7 +7,7 @@
             "track": "data",
             "github_file_url": "https://github.com/username/repo/blob/main/test.ext",
             "github_repo_url": "https://github.com/test/repo",
-            "status_code": 201
+            "status_code": 200
         },
         {
             "slack_name": "test2",
@@ -16,16 +16,16 @@
             "track": "video",
             "github_file_url": "https://github.com/username/repo/blob/main/test2.ext",
             "github_repo_url": "https://github.com/test2/repo",
-            "status_code": 201
+            "status_code": 200
         },
         {
             "slack_name": "a3ajagbe",
             "current_day": "Sunday",
-            "utc_time": "2023-09-10T17:20:05Z",
+            "utc_time": "2023-09-10T18:10:05Z",
             "track": "backend",
-            "github_file_url": "https://github.com/A3AJAGBE/student_API/blob/main/students.json",
+            "github_file_url": "https://github.com/A3AJAGBE/student_API/blob/main/main.py",
             "github_repo_url": "https://github.com/A3AJAGBE/student_API",
-            "status_code": 201
+            "status_code": 200
         },
         {
             "slack_name": "test3",
@@ -34,7 +34,7 @@
             "track": "data",
             "github_file_url": "https://github.com/username/repo/blob/main/test5.ext",
             "github_repo_url": "https://github.com/test5/repo",
-            "status_code": 201
+            "status_code": 200
         },
         {
             "slack_name": "test4",
@@ -43,7 +43,7 @@
             "track": "frontend",
             "github_file_url": "https://github.com/username/repo/blob/main/test4.ext",
             "github_repo_url": "https://github.com/test4/repo",
-            "status_code": 201
+            "status_code": 200
         }
     ]
 }

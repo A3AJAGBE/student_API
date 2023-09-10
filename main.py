@@ -32,7 +32,7 @@ def index():
 @app.post("/add")
 def add_student(new_student: Info, res: Response):
     student = new_student.model_dump()
-    res.status_code = 201
+    res.status_code = 200
     student["current_day"] = datetime.today().strftime('%A')
     student["utc_time"] = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
     student["status_code"] = res.status_code
