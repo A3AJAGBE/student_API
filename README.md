@@ -43,7 +43,7 @@ Clone this repo, then
 
 ```zsh
   cd student_API
-  python3 -m venv env
+  python3 -m venv venv
   source venv/bin/activate
   pip install -r requirements.txt
 ```
